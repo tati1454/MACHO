@@ -8,7 +8,7 @@ msvbvm60.dll: ${OBJ}
 	${CC} -shared -o msvbvm60.dll ${LDFLAGS} ${OBJ} src/msvbvm60.def
 
 tests.exe: msvbvm60.dll ${TEST_OBJ}
-	${CC} -o tests.exe ${LDFLAGS} ${TEST_OBJ} -L./ -lmsvbvm60
+	${CC} -o tests.exe ${LDFLAGS} ${TEST_OBJ}
 
 .PHONY: clean
 clean:
