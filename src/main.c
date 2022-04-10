@@ -1,8 +1,9 @@
 #include <stdio.h>
-
 #include <windows.h>
 
-DWORD ThunRTMain(void* vbheader) {
-    printf("Running ThunRTMain\n");
+#include "msvbvm.h"
+
+DWORD ThunRTMain(struct vb_header* vb_header) {
+    vb_header->main_function();
     return 0;
 }
