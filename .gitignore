@@ -1,5 +1,6 @@
 *.o
 compile_commands.json
 msvbvm60.dll
+tests.exe
 .cache
 .vscode
