@@ -1,0 +1,5 @@
+*.o
+compile_commands.json
+msvbvm60.dll
+.cache
+.vscode
