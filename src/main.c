@@ -15,3 +15,11 @@ void __vbaChkstk() {
     stub("\n");
     return;
 }
+
+DWORD __vbaExceptHandler(EXCEPTION_RECORD* exception,
+                         EXCEPTION_REGISTRATION_RECORD* exception_record,
+                         CONTEXT* context,
+                         EXCEPTION_REGISTRATION_RECORD** exception_records) {
+    printf("Unhandled exception %#x in macho at %#x\n", exception->ExceptionCode, exception->ExceptionAddress);
+    return 1;
+}

@@ -1,3 +1,4 @@
 EXPORTS
     ThunRTMain         @100
     __vbaChkstk        @182
+    __vbaExceptHandler @218
